@@ -57,18 +57,18 @@ is_string - to find out whether a variable is a string.*/
     <?php
         //basic type(int,float, string, bool) hinting. php7 support scalar type hinting.
 
-class Bar
-{
-    protected $model;
-
-    // string type hinting
-    public function setModel(string $model)
+    class Bar
     {
-        $this->model = $model;
-    }
-}
+        protected $model;
 
-?>
+        // string type hinting
+        public function setModel(string $model)
+        {
+            $this->model = $model;
+        }
+    }
+
+    ?>
     </div>
 </div>
 <?php include 'inc/footer.php'; ?>
