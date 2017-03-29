@@ -5,6 +5,8 @@
         <group>
             <file>file:/opt/lampp/htdocs/github/php_oop/oop2/scope_resolution.php</file>
             <file>file:/opt/lampp/htdocs/github/php_oop/oop2/type_hinting_interface.php</file>
+            <file>file:/opt/lampp/htdocs/github/php_oop/oop2/statics.php</file>
+            <file>file:/opt/lampp/htdocs/github/php_oop/oop2/class_constant.php</file>
         </group>
     </open-files>
 </project-private>
