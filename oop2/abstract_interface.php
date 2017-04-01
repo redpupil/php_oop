@@ -69,5 +69,26 @@
 
 
     </div>
+
+    An Interface is like a protocol. It doesn't designate the behavior of the object; it designates how your code tells that object to act. An interface would be like the English Language: defining an interface defines how your code communicates with any object implementing that interface.
+
+    An interface is always an agreement or a promise. When a class says "I implement interface Y", it is saying "I promise to have the same public methods that any object with interface Y has".
+
+    On the other hand, an Abstract Class is like a partially built class. It is much like a document with blanks to fill in. It might be using English, but that isn't as important as the fact that some of the document is already written.
+
+    An abstract class is the foundation for another object. When a class says "I extend abstract class Y", it is saying "I use some methods or properties already defined in this other class named Y".
+
+    So, consider the following PHP:
+    <?php
+    class Q implements P { } // this is saying that "Q" agrees to speak language "P" with your code.
+
+    class Y extends X { } // this is saying that "Y" is going to complete the partial class "X".
+    ?>
+
+    You would have your class implement a particular interface if you were distributing a class to be used by other people. The interface is an agreement to have a specific set of public methods for your class.
+
+    You would have your class extend an abstract class if you (or someone else) wrote a class that already had some methods written that you want to use in your new class.
+
+    These concepts, while easy to confuse, are specifically different and distinct. For all intents and purposes, if you're the only user of any of your classes, you don't need to implement interfaces.
 </div>
 <?php include 'inc/footer.php'; ?>
