@@ -5,38 +5,67 @@
 
 
     <?php
+    
+        //programming to an interface makes the code much more flexible and ready for changes.
+        abstract class Car {
+        protected $model;
+        protected $height;
 
-        class Bmw {
+        abstract public function calcTankVolume();
+      }
 
-            protected $model;
-            protected $rib;
-            protected $height;
+      class Bmw extends Car {
 
-            // The properties are introduced to the class through the constructor
-            public function __construct($model, $rib, $height) {
-                $this->model = $model;
-                $this->rib = $rib;
-                $this->height = $rib;
-            }
+        protected $rib;
 
-            // Calculate the tank volume for rectangular tanks
-            public function calcTankVolume()
-            {
-                return $this -> rib * $this -> rib * $this -> height;
-            }
+        public function __construct($model, $rib, $height)
+        {
+          $this -> model = $model;
+          $this -> rib = $rib;
+          $this -> height = $height;
         }
 
-        // Type hinting ensures that the function gets only Bmw objects as arguments
-        function calcTankPrice(Bmw $bmw, $pricePerGalon){
+        // Calculates a rectangular tank volume
+        public function calcTankVolume()
+        {
+          return $this -> rib * $this -> rib * $this -> height;
+        } 
+      }
 
-            return $bmw -> calcTankVolume() * 0.0043290 * $pricePerGalon . "$";
 
+      class Mercedes extends Car {
+        protected $radius;
+
+        public function __construct($model, $radius, $height)
+        {
+          $this ->model = $model;
+          $this -> radius = $radius;
+          $this -> height = $height;
         }
 
-        $bmw1 = new Bmw('62182791', 14, 21);
-        echo calcTankPrice($bmw1,3);
 
-
+        // Calculates the volume of cylinders
+        public function calcTankVolume()
+        {
+          return $this -> radius * $this -> radius * pi() * $this -> height;
+        }
+      }
+      
+      
+      // Type hinting ensures that the function gets only objects 
+        // that belong to the Car interface
+        function calcTankPrice(Car $car, $pricePerGalon)
+        {
+          echo $car -> calcTankVolume() * 0.0043290 * $pricePerGalon . "$";
+        }
+        
+        //create bmw object
+        $bmw1 = new Bmw('62182791', 14, 21); 
+        echo calcTankPrice($bmw1, 3);
+        
+        //create mercedes object
+        $mercedes1 = new Mercedes('12189796', 7, 28); 
+        echo calcTankPrice($mercedes1, 3);
     ?>
     </div>
 </div>
