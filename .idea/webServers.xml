@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="01de58ee-adee-4836-bde1-a2395f9d1322" name="XAMPP Apache " url="http://localhost/PHPStormWorkspace/php_oop/">
+      <webServer id="01de58ee-adee-4836-bde1-a2395f9d1322" name="XAMPP Apache" url="http://localhost/github/php_oop/">
         <fileTransfer port="0" mountedRoot="$PROJECT_DIR$" accessType="MOUNT" />
       </webServer>
     </option>
