@@ -1,5 +1,5 @@
 <?php include 'inc/header.php'; ?>
-<h2>Topics: Project List</h2>
+<h2>Topics: Object Iteration</h2>
 <div class="content">
     <div class="topics">
 
@@ -16,9 +16,9 @@
             private $private = 'private var';
             
             function iterateVisible() {
-                echo "MyClass::iterateVisible:\n";
+                echo "MyClass::iterateVisible:<br/>";
                 foreach ($this as $key => $value) {
-                    print "$key=>$value\n";
+                    print "$key=>$value<br/>";
                 }
             }
         
@@ -27,10 +27,10 @@
         $class = new MyClass();
         
         foreach ($class as $key => $value) {
-            print "$key => $value\n";
+            print "$key => $value<br/>";
         }
         
-        echo "\n";
+        echo "<br/>";
         
         $class->iterateVisible();
 
