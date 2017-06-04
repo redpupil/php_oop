@@ -76,7 +76,7 @@
         $a = new test("riaz" , "khan");
         $b = $a; //Copy of the object
         $c = clone $a; //clone of the object
-        $a->a = "no khan";
+        $a->a = "popy poly";
         print_r($a);
         print_r($b);
         print_r($c);
@@ -103,7 +103,7 @@
         $a = new test1("riaz" , "khan");
         $b = $a; //Copy of the object
         $c = clone $a; //clone of the object
-        $a->a = "no khan";
+        $a->a = "popy poly";
         print_r($a);
         print_r($b);
         print_r($c);
