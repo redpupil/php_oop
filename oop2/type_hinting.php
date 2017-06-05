@@ -28,6 +28,8 @@
     calcNumMilesOnFullTank($models);
 
     ?>
+        
+        
 
     <?php
         //Object type hinting
@@ -54,6 +56,8 @@ is_null - to find out whether a variable is null.
 is_string - to find out whether a variable is a string.*/
 
     ?>
+        
+        
     <?php
         //basic type(int,float, string, bool) hinting. php7 support scalar type hinting.
 
