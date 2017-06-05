@@ -5,7 +5,7 @@
 
 
     <?php
-//comparison operator (==), object variables are compared in a simple manner, 
+//comparison operator (==), 
 //namely: Two object instances are equal if they have the same attributes and 
 //values (values are compared with ==), and are instances of the same class.
 
