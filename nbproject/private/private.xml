@@ -5,6 +5,7 @@
         <group>
             <file>file:/opt/lampp/htdocs/github/php_oop/oop2/late_static_binding.php</file>
             <file>file:/opt/lampp/htdocs/github/php_oop/oop2/object_serialization.php</file>
+            <file>file:/opt/lampp/htdocs/github/php_oop/oop/class_constant.php</file>
             <file>file:/opt/lampp/htdocs/github/php_oop/oop2/objects_reference.php</file>
         </group>
     </open-files>
