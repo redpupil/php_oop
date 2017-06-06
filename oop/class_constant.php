@@ -10,7 +10,7 @@
             const NAME = "Md. Riazul Islam khan";//default public. constant
         
         function displayPerson() {
-            echo "Full Name is: ".Person::NAME;
+            echo "Full Name is: ".Person::NAME; //access constant property
             }
         }
         
